@@ -1,17 +1,9 @@
 import Head from 'next/head';
-//import hey from '../api/hello.js';
+import hdg from './api/hello.js';
 
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const hdg = () => {
-    return (
-      <p className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4">
-        Total Purchases by Customer
-      </p>
-    );
-  };
-
   return (
     <div className={styles.container}>
       <Head>
@@ -22,6 +14,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <hdg>hhh</hdg>
+
+    
 
         <p className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4">
           Total Purchases by Customer
