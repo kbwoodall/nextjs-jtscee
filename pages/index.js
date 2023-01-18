@@ -14,19 +14,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <hdg>hhh</hdg>
-
-    
-
-        <p className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4">
-          Total Purchases by Customer
-        </p>
-
+        
         <p className={styles.description}>
           Get started by editingxxxxxxxxxx{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
