@@ -1,7 +1,7 @@
-import  Head from 'next/head';
-import {hdg2} from './api/hello.js';
+import Head from 'next/head';
+//import { hdg2 } from './api/hello.js';
 
-import styles from '../styles/Home.module.css'; 
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -14,9 +14,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        hdg2
+
         <p className={styles.description}>
-          Get started by editingxxxxxxxxxx{' '}
+          Get started by editing ok{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
         <div className={styles.grid}>
