@@ -2,6 +2,13 @@ import Head from 'next/head';
 
 import styles from '../styles/Home.module.css';
 
+
+function handler(req, res) {
+  // Open Chrome DevTools to step through the debugger!
+  // debugger io;
+  res.status(200).json({ name: 'Hello, world!' });
+};
+
 export default function Home() {
   return (
     <div className={styles.container}>
