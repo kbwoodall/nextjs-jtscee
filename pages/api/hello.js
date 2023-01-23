@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
+export default function handler(req, res) {
   // Open Chrome DevTools to step through the debugger!
   // debugger io;
   res.status(200).json({ name: 'Hello, world!' });

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-//import { hdg2 } from './api/hello.js';
 
 import styles from '../styles/Home.module.css';
 
