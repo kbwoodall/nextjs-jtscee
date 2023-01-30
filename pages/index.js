@@ -26,7 +26,7 @@ export default function Home() {
       <main className={styles.main}>
         <button onClick={fetchTodos}>Get todos</button>
         <h1 className={styles.title}>
-          Welcome to {todos.name} <a href="https://nextjs.org">Next.js!</a>
+          Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
