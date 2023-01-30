@@ -2,14 +2,21 @@ import Head from 'next/head';
 
 import styles from '../styles/Home.module.css';
 
-
 function handler(req, res) {
   // Open Chrome DevTools to step through the debugger!
   // debugger io;
   res.status(200).json({ name: 'Hello, world!' });
-};
+}
 
 export default function Home() {
+  const [todos, settodos] = useState([]);
+
+  const fetchTodos = async () => {
+    const response = await fetch('/api/hello');
+    const data = await response.json();
+    settodos(data);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,6 +24,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <button onClick={fetchTodos}>Get todos</button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
