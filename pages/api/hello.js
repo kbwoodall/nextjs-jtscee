@@ -3,7 +3,7 @@
 export default function handler(req, res) {
   // Open Chrome DevTools to step through the debugger!
   // debugger io;
-  res.status(200).json({ name: 'Hello, world!' });
+  res.status(200).json({ name: 'Hello, kerry' });
 };
 /*
 export const hdg2 = () => {

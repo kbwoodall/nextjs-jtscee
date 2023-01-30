@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import { useState } from "react"; 
 import styles from '../styles/Home.module.css';
 
 function handler(req, res) {
@@ -26,7 +26,7 @@ export default function Home() {
       <main className={styles.main}>
         <button onClick={fetchTodos}>Get todos</button>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
