@@ -2,12 +2,6 @@ import Head from 'next/head';
 import { useState } from "react"; 
 import styles from '../styles/Home.module.css';
 
-function handler(req, res) {
-  // Open Chrome DevTools to step through the debugger!
-  // debugger io;
-  res.status(200).json({ name: 'Hello, world!' });
-}
-
 export default function Home() {
   const [todos, settodos] = useState([]);
 
@@ -24,11 +18,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <button onClick={fetchTodos}>Get todos</button>
+        
         <h1 className={styles.title}>
           Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
+        <button onClick={fetchTodos}>Get Name</button>
         <p className={styles.description}>
           Get started by editing ok{' '}
           <code className={styles.code}>pages/index.js</code>
