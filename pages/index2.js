@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react';
 
 import { Suspense, lazy } from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const Home = lazy(() => import('./routes/Home'));
-const About = lazy(() => import('./routes/About'));
+//const Home = lazy(() => import('./routes/Home'));
+//const About = lazy(() => import('./routes/About'));
 
-import { useRoutes } from 'hookrouter';
-import Routes from './router';
+//import { useRoutes } from 'hookrouter';
+//import Routes from './router';
 
-import './style.css';
-import React, { Component } from 'react';
+//import './style.css';
+import { Component } from 'react';
 import { render } from 'react-dom';
 import { createContext, useContext } from 'react';
 import { useMemo } from 'react';
