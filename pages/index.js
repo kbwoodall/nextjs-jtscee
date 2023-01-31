@@ -29,7 +29,7 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/stuff">Blog Post</Link>
+            <Link href="/">Blog Post</Link>
           </li>
         </ul>
         <button onClick={fetchTodos}>Get Name</button>
