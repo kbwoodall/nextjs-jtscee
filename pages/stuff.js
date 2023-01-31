@@ -29,15 +29,11 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/blog/hello-world">Blog Post</Link>
+            <Link href="/stuff">Blog Post</Link>
           </li>
         </ul>
         <button onClick={fetchTodos}>Get Name</button>
-        <p className={styles.description}>
-          Get started by editing ok{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-        
+      </main>
+    </div>
   );
-  </div
 }
