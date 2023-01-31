@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import { useState } from "react"; 
+import { useState } from 'react';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   const [todos, settodos] = useState([]);
@@ -18,10 +19,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
         <h1 className={styles.title}>
           Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li>
+            <Link href="/blog/hello-world">Blog Post</Link>
+          </li>
+        </ul>
         <button onClick={fetchTodos}>Get Name</button>
         <p className={styles.description}>
           Get started by editing ok{' '}
