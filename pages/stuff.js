@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Stuff() {
   const [todos, settodos] = useState([]);
 
   const fetchTodos = async () => {
