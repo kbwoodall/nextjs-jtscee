@@ -29,7 +29,7 @@ export default function Stuff() {
           </li>
 
           <li>
-            <Link href="/stuff">Blog Post</Link>
+            <Link href="/stuff">Stuff</Link>
           </li>
         </ul>
         <button onClick={fetchTodos}>Get Name</button>
